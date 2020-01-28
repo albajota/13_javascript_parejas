@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Los secretos de Goyita</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        img{
+            width: 100%;
+        }
+        .contenedor{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat (2, 1fr);
+            grid-gap: 20px;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+    <script type="application/javascript">
+        $(document).ready(function(){
+            $(".l").hide();
+            $(".f").hide();
+            $(".i").hide();
+            $(".t").hide();
+            $("h1").click(function(){
+                $(".l").show();
+            });
+            $(".l").dblclick(function(){
+                $(".f").show();
+            });
+            $(".f").mousedown(function(){
+                $(".i").show();
+            });
+            $(".i").hover(function(){
+                $(".t").show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>¿Quieres ver el encargo que me ha hecho Godoy?</h1>
+    <div class="contenedor">
+    <div class="l">
+        <img src="img/Linkedin.jpg" alt="">
+        <p>Linkedin</p>
+    </div>
+    <div class="f">
+        <img src="img/facebook.jpg" alt="">
+        <p>Facebook</p>
+    </div>
+    <div class="i">
+        <img src="img/instagram.jpg" alt="">
+        <p>Instagram</p>
+    </div>
+    <div class="t">
+        <img src="img/tinder.jpg" alt="">
+        <p>Tinder</p>
+    </div>
+    </div>
+</body>
+</html>
